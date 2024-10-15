@@ -2,6 +2,7 @@ package com.example.lessononeapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,6 +18,14 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val text = findViewById<TextView>(R.id.textView1)
+        val num = findViewById<TextView>(R.id.textView2)
+
+        val messageText = intent.getStringExtra("text")
+        val numText = intent.getIntExtra("num", 1)
+        text.text = messageText
+        num.text = numText.toString()
 
     }
 }

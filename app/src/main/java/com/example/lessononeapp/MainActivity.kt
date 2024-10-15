@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this,MainActivity2::class.java)
             startActivity(intent)
+
+            intent.putExtra("text","Wombat best of the best animal")
+            startActivity(intent)
+
+            intent.putExtra("num",4)
+            startActivity(intent)
         }
     }
 }
