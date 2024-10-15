@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lessonOneApp</string>
+    <string name="welcome">Welcome</string>
+    <string name="enterName">Enter your name</string>
+</resources>
